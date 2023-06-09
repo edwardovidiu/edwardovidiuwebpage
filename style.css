@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 175%;
+}
+
+.container {
+  width: 100%;
+  float: left;
+}
+.card {
+  border: 3px solid #000000;
+  background-color: gray;
+  margin: 10px 10px;
+  width: calc(33.33% - 20px);
+  float: left;
+}
+.menu-item {
+  float: right;
+  width: 100px;
+  text-align: center;
+  border: 3px solid #000000;
+  border-top: none;
+  border-right: none;
+  padding: 2px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  width: 90%;
+  clear: both;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+.chicken {
+  background-color: #d59898;
+}
+.beef {
+  background-color: #c14542;
+  color: #ffffff;
+}
+.sushi {
+  background-color: #e4d198;
+}
+
+@media (max-width: 767px) {
+  .card {
+    float: left;
+    background-color: gray;
+    margin: 10px 10px;
+    width: calc(100% - 20px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .card {
+    float: left;
+    background-color: gray;
+    margin: 10px 10px;
+    width: calc(50% - 20px);
+  }
+
+  .card:nth-child(3) {
+    width: calc(100% - 20px);
+    margin: 10px 10px;
+  }
+}
